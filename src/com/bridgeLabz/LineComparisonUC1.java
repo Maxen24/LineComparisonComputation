@@ -20,7 +20,13 @@ public class LineComparisonUC1 {
 		double distance;
 		distance=Math.sqrt(Math.pow(x2-x1,2)+ Math.pow(y2-y1,2));
 		System.out.println("Length of Line is"+" "+distance);
-
+		if (x2==x1 && y2==y1) {
+			System.out.println("Both the lines are equal");
+		}else if (x2>=y2 && x1>=y1) {
+			System.out.println("First line is greater than second line");
+		}else if (x2<=y2 && x1<=y1) {
+			System.out.println("First line is less than second line");
+		}
 	}
 
 }
